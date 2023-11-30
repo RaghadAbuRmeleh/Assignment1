@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFA495"
+    android:orientation="vertical"
+    tools:context=".AddTask">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="315dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:text="Add Task"
+            android:textColor="#FEA394"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#00FFFFFF"
+            app:srcCompat="@drawable/left_arrow__1_" />
+
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputTxt1"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_marginTop="20dp"
+        android:hint="Add Task"
+
+
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputTaskName"
+            android:layout_width="332dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="30dp"
+            android:gravity="bottom|clip_horizontal"
+            android:textColor="#FFFFFF"
+            android:textColorHighlight="#F7FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:textColorLink="#FFFFFF" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="334dp"
+        android:layout_height="82dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#F7FFFFFF"
+        android:text="Save Task"
+        android:textColor="#FEA394"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
